@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pokecards
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      format_sql: true
+rsa:
+  publicKey: classpath:certificates/public.pem
+  privateKey: classpath:certificates/private.pem
+
